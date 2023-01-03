@@ -21,7 +21,7 @@ We will use code to give the positional servo different commands through the Cir
 can move from 0 - 180 degrees. We can tell the servo to go any postion along this movement arc by telling it to go to an exact angle.
 </br><i class="window minimize outline icon"></i></br>
 <i class="circle icon"></i>Drag a positional ``||servos:set servo A1 angle to||`` block and place it inside your forever loop.</br>
-<i class="circle icon"></i>``||servos:A1||`` is the default value. You can use up to two servos. If you add a second servo change it to ``||servos:set servo A2 angle to||``
+<i class="circle icon"></i>``||servos:A1||`` is the default value. You can use up to two servos. If you add a second servo change it to ``||servos:A2||``
 
 ```blocks
 forever(function () {
@@ -74,7 +74,7 @@ forever(function () {
 forever(function () {
     servos.A1.setAngle(0)
     pause(1000)
-    servos.A2.setAngle(180)
+    servos.A1.setAngle(180)
     // @highlight
     pause(1000)
 })```
